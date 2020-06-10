@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'HK Grotesk Black';
+    src: url('./fonts/hkgrotesk-black-webfont.eot');
+    src: url('./fonts/hkgrotesk-black-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-black-webfont.svg')format("svg");
+}
+
+@font-face {
+    font-family: 'HK Grotesk Bold';
+    src: url('./fonts/hkgrotesk-bold-webfont.eot');
+    src: url('./fonts/hkgrotesk-bold-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-bold-webfont.svg')format("svg");
+}
+
+@font-face {
+    font-family: 'HK Grotesk Extrabold';
+    src: url('./fonts/hkgrotesk-extrabold-webfont.eot');
+    src: url('./fonts/hkgrotesk-extrabold-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-extrabold-webfont.svg')format("svg");
+}
+
+@font-face {
+    font-family: 'HK Grotesk Italic';
+    src: url('./fonts/hkgrotesk-italic-webfont.eot');
+    src: url('./fonts/hkgrotesk-italic-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-italic-webfont.svg')format("svg");
+}
+
+@font-face {
+    font-family: 'HK Grotesk Light';
+    src: url('./fonts/hkgrotesk-light-webfont.eot');
+    src: url('./fonts/hkgrotesk-light-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-light-webfont.svg')format("svg");
+}
+
+@font-face {
+    font-family: 'HK Grotesk Regular';
+    src: url('./fonts/hkgrotesk-regular-webfont.eot');
+    src: url('./fonts/hkgrotesk-regular-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-regular-webfont.svg')format("svg");
+}
+
+
+/* --------------------------- Home --------------------------- */
+
+body {
+    font-family: 'HK Grotest Regular', Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    height: 300vh;
+}
+
+.home-main {
+    position: fixed;
+}
+
+.welcome {
+    font-size: 40px;
+    margin-top: 18%;
+    margin-left: 10%;
+    max-width: 60%;
+}
+
+.links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    color: white;
+    font-size: 80px;
+}
+
+/* --------------------------- Meter --------------------------- */
+
+.meter-main {
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-progress {
+    height: 5px;
+    width: 25%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+
+.bounce {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.arrow {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    0%      { transform: translateY(0); }
+    50%     { transform: translateY(-50); }
+    100%    { transform: translateY(0); }
+}
