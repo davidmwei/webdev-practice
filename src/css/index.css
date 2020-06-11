@@ -40,37 +40,86 @@
         url('./fonts/hkgrotesk-regular-webfont.svg')format("svg");
 }
 
+@font-face {
+    font-family: 'HK Grotesk Semibold';
+    src: url('./fonts/hkgrotesk-semibold-webfont.eot');
+    src: url('./fonts/hkgrotesk-semibold-webfont.woff')format('woff'),
+        url('./fonts/hkgrotesk-semibold-webfont.svg')format("svg");
+}
+
 
 /* --------------------------- Home --------------------------- */
 
 body {
-    font-family: 'HK Grotest Regular', Arial, Helvetica, sans-serif;
+    font-family: 'HK Grotesk Regular', Arial, Helvetica, sans-serif;
     background-color: black;
-    color: white;
     height: 300vh;
 }
 
 .home-main {
+    color: white;
     position: fixed;
+}
+
+.wave-container {
+    position: fixed;
+    opacity: .04;
+    left: -200px;
 }
 
 .welcome {
+    position: fixed;
     font-size: 40px;
     margin-top: 18%;
-    margin-left: 10%;
+    margin-left: 20%;
     max-width: 60%;
 }
 
-.links {
+video {
     position: fixed;
+    right: -280px;
+    bottom: -200px;
+    min-width: 150%;
+}
+
+.links {
+    font-family: 'HK Grotesk', Arial, Helvetica, sans-serif;
+    position: fixed;
+    margin-top: 8%;
+    margin-left: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.links a {
-    color: white;
-    font-size: 80px;
+.links-container {
+    margin-top: 20px;
 }
+
+.links a {
+    transition: .4s ease-in-out;
+    color: white;
+    font-size: 100px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    transition: .4s ease-in-out;
+    -webkit-text-stroke: 1px white;
+    color: black;
+}
+
+.links a:hover ~ .link-logo {
+    color: white;
+    transition: .4s ease-in-out;
+    opacity: 1;
+}
+
+.links .link-logo {
+    opacity: 0;
+    max-width: 5%;
+    margin-left: 20px;
+}
+
 
 /* --------------------------- Meter --------------------------- */
 
@@ -91,22 +140,23 @@ body {
     width: 25%;
     border: 1px solid white;
     border-radius: 5px;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     overflow: hidden;
 }
 
-.bounce {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+.scroll-text {
+    animation: blink 2s infinite;
+    -webkit-animation: blink 2s infinite;
 }
 
-.arrow {
-    animation-name: bounce;
-    animation-timing-function: linear;
+@keyframes blink {
+    0% { color : white; }
+    50% { color : black; }
+    100% { color : white; }
 }
 
-@keyframes bounce {
-    0%      { transform: translateY(0); }
-    50%     { transform: translateY(-50); }
-    100%    { transform: translateY(0); }
+@-webkit-keyframes blink {
+    0% { color : white; }
+    50% { color : black; }
+    100% { color : white; }
 }

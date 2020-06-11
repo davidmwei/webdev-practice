@@ -1,8 +1,8 @@
 import React from 'react';
-import { CSSTransition } from 'react-transition-group';
-
 import Meter from './components/Meter.js';
 
+import link from './assets/images/link.png';
+import wave from './assets/video/wave.mov';
 
 class Home extends React.Component {
     constructor(props) {
@@ -113,11 +113,15 @@ class Welcome extends React.Component {
                 <div className='header'>
                     header
                 </div>
+                <div className='wave-container'>
+                    <video className='wave-mov' playsInline autoPlay loop muted src={wave} />
+                </div>
                 <div className='welcome'>
                 👋 I’m David — a second year computer science student at UC Berkeley. I 
                 like to explore new things and make people-oriented products. 
                 </div>
                 <Meter begin={0} end={1000} />
+            
             </div>
         )
     }
@@ -182,10 +186,22 @@ class Links extends React.Component {
     render() {
         return (
             <div className='links' style={this.state.style} onTransitionEnd={this.transitionEnd}>
-                <a href='https://github.com/davidmwei'>Github</a>
-                <a href='https://www.linkedin.com/in/davidmwei/'>LinkedIn</a>
-                <a href='../resume.pdf' target='_blank'>Resume</a>
-                <a href='mailto:davidwei@berkeley.edu?subject=hello!'>Email</a>
+                <div className='links-container'>
+                    <a href='https://github.com/davidmwei'>Github</a>
+                    <img src={link} class='link-logo' />
+                </div>
+                <div className='links-container'>
+                    <a href='https://www.linkedin.com/in/davidmwei/'>LinkedIn</a>
+                    <img src={link} class='link-logo' />
+                </div>
+                <div className='links-container'>
+                    <a href='../resume.pdf' target='_blank'>Resume</a>
+                    <img src={link} class='link-logo' />
+                </div>
+                <div className='links-container'>
+                    <a href='mailto:davidwei@berkeley.edu?subject=hello!'>Email</a>
+                    <img src={link} class='link-logo' />
+                </div>
             </div>
         )
     }
