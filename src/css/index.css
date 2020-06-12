@@ -63,8 +63,8 @@ body {
 
 .wave-container {
     position: fixed;
-    opacity: .04;
-    left: -200px;
+    opacity: .1;
+    left: -500px;
 }
 
 .welcome {
@@ -77,7 +77,7 @@ body {
 
 video {
     position: fixed;
-    right: -280px;
+    right: -400px;
     bottom: -200px;
     min-width: 150%;
 }
@@ -119,6 +119,42 @@ video {
     max-width: 5%;
     margin-left: 20px;
 }
+
+
+
+/* --------------------------- About --------------------------- */
+
+.info-main {
+    color: white;
+    position: fixed;
+}
+
+.info-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom: 15%;
+}
+
+.info-text {
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+
+.my-pic-container {
+    display: inline-block;
+    height: 100%;
+    text-align: right;
+}
+
+#my-pic {
+    max-width: 90%;
+    vertical-align: middle
+}
+
+
 
 
 /* --------------------------- Meter --------------------------- */
