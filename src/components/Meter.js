@@ -32,7 +32,6 @@ class Meter extends React.Component {
                         <div className='scroll-progress-fill' style={fillStyle}>
                         </div>
                     </div>
-                    <div className='scroll-text'>scroll</div>
                 </div>
             </div>
         )

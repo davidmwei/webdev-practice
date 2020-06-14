@@ -124,6 +124,10 @@ video {
 
 /* --------------------------- About --------------------------- */
 
+.about-main {
+    height: 500vh;
+}
+
 .info-main {
     color: white;
     position: fixed;
@@ -134,27 +138,92 @@ video {
     display: flex;
     flex-direction: row;
     left: 0;
-    bottom: 15%;
+    top: 10%;
+    max-height: 80%
 }
 
 .info-text {
-    font-size: 30px;
+    font-size: 1.7em;
     margin-left: 5%;
-    margin-top: 25px;
+    margin-top: 1%;
+    color: #808080;
+    width: 60%;
+}
+
+.greeting-text {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: white;
 }
 
 .my-pic-container {
     display: inline-block;
     height: 100%;
     text-align: right;
+    width: 80%;
 }
 
 #my-pic {
     max-width: 90%;
-    vertical-align: middle
+    vertical-align: middle;
+    margin-top: 1%;
 }
 
+.calhacks-main {
+    color: white;
+    position: fixed;
+}
 
+.calhacks-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 10%;
+    max-height: 80%
+}
+
+.calhacks-pic-container {
+    display: inline-block;
+    height: 100%;
+    text-align: left;
+    width: 80%;
+}
+
+#calhacks-pic {
+    margin-top: 1%;
+    max-width: 90%;
+    vertical-align: middle;
+}
+
+.calhacks-text {
+    color: #808080;
+    font-size: 1.8em;
+    margin-right: 50px;
+    margin-top: 1%;
+    width: 60%;
+}
+
+.title-container {
+    margin-bottom: 30px;
+}
+
+#calhacks-title {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+}
+
+#calhacks-title:hover {
+    transition: .4s ease-in-out;
+    -webkit-text-stroke: 1px white;
+    color: black;
+    text-decoration: none;
+}
+
+.white-text {
+    color: white;
+}
 
 
 /* --------------------------- Meter --------------------------- */
@@ -178,21 +247,4 @@ video {
     border-radius: 5px;
     margin-bottom: 1%;
     overflow: hidden;
-}
-
-.scroll-text {
-    animation: blink 2s infinite;
-    -webkit-animation: blink 2s infinite;
-}
-
-@keyframes blink {
-    0% { color : white; }
-    50% { color : black; }
-    100% { color : white; }
-}
-
-@-webkit-keyframes blink {
-    0% { color : white; }
-    50% { color : black; }
-    100% { color : white; }
 }

@@ -50,7 +50,9 @@ class About extends React.Component {
         }
 
         return (
-            shownComponent
+            <div className='about-main'>
+                {shownComponent}
+            </div>
         )
     }
 }

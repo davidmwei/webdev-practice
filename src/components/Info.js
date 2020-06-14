@@ -67,15 +67,19 @@ class Info extends React.Component {
                 </div>
                 <div className='info-container'>
                     <div className='info-text'>
-                        Hello! I'm currently in my sophomore year at UC Berkeley, 
-                        studying computer science 💻 and applied mathematics 📐.
+                        <div className='greeting-text'>
+                            Hello!
+                        </div>
+                        I'm currently in my <span className='white-text'>sophomore</span> year at UC Berkeley, 
+                        studying <span className='white-text'>computer science</span> 💻 and <span className='white-text'>
+                        applied mathematics</span> 📐.
                         <br />
                         <br />
                         Although i'm pursuing a STEM intensive degree, i've always 
                         valued interdiscplinary  education. In particular, I love 
                         solving problems, collaborating with other professional  
                         fields, and prioritizing people with my work. I try my 
-                        best to be someone who is passionate and approachable.
+                        best to be someone who is <span className='white-text'>passionate and approachable</span>.
                         <br />
                         <br />
                         Scroll below to see what else I'm up to!

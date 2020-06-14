@@ -70,13 +70,16 @@ class CalHacks extends React.Component {
                         <img src={calhackspic} alt='calhacks pic' id='calhacks-pic' />
                     </div>
                     <div className='calhacks-text'>
-                        <a src='calhacks.io'>Cal Hacks</a>
-                        I have had the privilege of working with Cal Hacks, the world's largest 
-                        collegiate hackathon which is hosted annually at UC Berkeley, since Fall 
-                        of 2019. For Cal Hacks 6.0, we saw 3000+ applicants and 2000+ attendees hailing 
+                        <div className='title-container'>
+                            <a href='calhacks.io' id='calhacks-title'>Cal Hacks</a>
+                        </div>
+                        I have had the privilege of working with Cal Hacks, the world's <span className='white-text'>largest 
+                        collegiate hackathon</span> which is hosted annually at UC Berkeley, since Fall 
+                        of 2019. For Cal Hacks 6.0, we saw <span className='white-text'>3000+ applicants and 2000+ attendees</span> hailing 
                         from all over the globe.
                         <br />
-                        As the current lead Finance director, I create our annual budget and work 
+                        <br />
+                        As the current <span className='white-text'>lead Finance director</span>, I create our annual budget and work 
                         closely with the sponsorship team to secure adequate funds to run our event. 
                     </div>
                 </div>
