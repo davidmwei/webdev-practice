@@ -124,6 +124,20 @@ video {
 
 /* --------------------------- About --------------------------- */
 
+.aboutanim-main {
+    color: white;
+}
+
+.upper, .lower {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
 .about-main {
     height: 500vh;
 }
@@ -168,6 +182,10 @@ video {
     vertical-align: middle;
     margin-top: 1%;
 }
+
+
+
+
 
 .calhacks-main {
     color: white;

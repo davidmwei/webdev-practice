@@ -42,7 +42,7 @@ class About extends React.Component {
     render() {
         let shownComponent;
         if (this.state.showAbout) {
-            shownComponent = <div></div>
+            shownComponent = <AboutAnim onTransitionEnd={this.transitionEnd} mounted={this.state.showAbout} />
         } else if (this.state.showInfo) {
             shownComponent = <Info onTransitionEnd={this.transitionEnd} mounted={this.state.showInfo} />
         } else if (this.state.showCalHacks) {
