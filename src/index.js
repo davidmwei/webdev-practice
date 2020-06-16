@@ -9,7 +9,7 @@ import '../src/css/index.css';
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path='/' component={About} exact />
+            <Route path='/' component={Work} exact />
             <Route path='/about' component={Home} exact />
             <Route path='/work' component={Work} exact />
         </Switch>

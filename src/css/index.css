@@ -129,11 +129,28 @@ video {
 }
 
 .upper, .lower {
+    font-family: 'HK Grotesk Bold', Arial, Helvetica, sans-serif;
+    font-size: 300px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
+.upper .block {
+    height: .6em;
+    width: .8em;
+    background-color: white;
+}
 
+.lower .block {
+    width: .5em;
+    height: 1em;
+    background-color: white;
+}
+
+.letter:hover {
+}
 
 
 
@@ -242,6 +259,38 @@ video {
 .white-text {
     color: white;
 }
+
+
+
+/* --------------------------- Work --------------------------- */
+
+body {
+    height: 350vh;
+}
+
+.display-frame-main {
+    position: fixed;
+    top: 25%;
+}
+
+.content-main {
+    color: white;
+    position: fixed;
+    left: 20%;
+    width: 40%;
+    font-size: 25px;
+}
+
+.line {
+    margin-bottom: 1.8em;
+}
+
+.line a {
+    text-decoration: none;
+    color: white;
+}
+
+
 
 
 /* --------------------------- Meter --------------------------- */

@@ -87,7 +87,7 @@ class AboutAnim extends React.Component {
                         U
                     </div>
                     <div className='letter'>
-                        T
+                        T 
                     </div>
                     <div className='block'></div>
                 </div>
