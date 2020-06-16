@@ -97,7 +97,9 @@ ProjFrame.defaultProps = {
     line3: 'line 3',
     linkable: false,
     link: '',
-    pic: ''
+    pic: '',
+    onTransitionEnd: '',
+    mounted: false
 }
 
 

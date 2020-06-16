@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjFrame from './components/ProjFrame.js';
+import NavBar from './components/NavBar.js';
 
 
 class Work extends React.Component {
@@ -69,9 +70,7 @@ class Work extends React.Component {
 
         return (
             <div className='work-main'>
-                <div className='navbar'>
-                    navbar here
-                </div>
+                <NavBar left='projects & experience' right1='/about' right1name='about' right2='/' right2name='home' />
                 {display}
             </div>
         )

@@ -2,6 +2,7 @@ import React from 'react';
 import Meter from './Meter.js'
 
 import wave from '../assets/video/wave.mov';
+import NavBar from './NavBar.js';
 
 class Welcome extends React.Component {
     constructor(props) {
@@ -62,9 +63,7 @@ class Welcome extends React.Component {
     render() {
         return ( this.state.show && 
             <div className='home-main' style={this.state.style} onTransitionEnd={this.transitionEnd}>
-                <div className='header'>
-                    header
-                </div>
+                <NavBar left='davidwei.me v2' right1='/work' right1name='work' right2='/about' right2name='about' />
                 <div className='wave-container'>
                     <video className='wave-mov' playsInline autoPlay loop muted src={wave} />
                 </div>
