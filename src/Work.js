@@ -54,16 +54,20 @@ class Work extends React.Component {
                             mounted={this.state.showFrame1} />
         } else if (this.state.showFrame2) {
             display = <ProjFrame begin={1000} end={2000} 
-                            line1={'cs-degree-tracker'}
-                            line2={'Using React, I built a webapp designed to help CS majors at Berkeley plan their courses in order to fulfill the degree.'}
-                            line3={'See github (work in progress)'}
+                            line1={'CS61BL Summer 2020 - Academic Intern'}
+                            line2={'I am currently an academic intern for CS61BL (Data Structures), where I assist TAs in running labs.'}
+                            line3={"Here is CS61BL's website!"}
+                            linkable={true}
+                            link='https://cs61bl.org/su20/'
                             onTransitionEnd={this.transitionEnd}
                             mounted={this.state.showFrame2} />
         } else {
             display = <ProjFrame begin={2000} end={3000} 
-                            line1={'gitlet'}
-                            line2={'As the final project for CS61B, I built a mini version-control system in Java.'}
-                            line3={'Request more info'}
+                            line1={'cs-degree-tracker'}
+                            line2={'Using React, I built a webapp designed to help CS majors at Berkeley plan their courses in order to fulfill the degree.'}
+                            line3={'See github (work in progress)'}
+                            linkable={true}
+                            link='https://www.github.com/davidmwei/cs-degree-tracker'
                             onTransitionEnd={this.transitionEnd}
                             mounted={this.state.showFrame3} />
         }
