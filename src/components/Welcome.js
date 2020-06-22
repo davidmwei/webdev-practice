@@ -64,9 +64,11 @@ class Welcome extends React.Component {
         return ( this.state.show && 
             <div className='home-main' style={this.state.style} onTransitionEnd={this.transitionEnd}>
                 <NavBar left='davidwei.me v2' right1='/work' right1name='work' right2='/about' right2name='about' />
-                <div className='wave-container'>
-                    <video className='wave-mov' playsInline autoPlay loop muted src={wave} />
-                </div>
+                {
+                    /*<div className='wave-container'>
+                        <video className='wave-mov' playsInline autoPlay loop muted src={wave} />
+                    </div>*/
+                }
                 <div className='welcome'>
                 👋 I’m David — a second year computer science student at UC Berkeley. I 
                 like to explore new things and make people-oriented products. 
