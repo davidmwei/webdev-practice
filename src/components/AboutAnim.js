@@ -33,6 +33,7 @@ class AboutAnim extends React.Component {
     unMountStyle() {
         this.setState({
             style: {
+                width: '0%',
                 opacity: 0,
                 transition: 'all 1s ease'
             }
@@ -42,6 +43,7 @@ class AboutAnim extends React.Component {
     mountStyle() {
         this.setState({
             style: {
+                width: '100%',
                 opacity: 1,
                 transition: 'all 1s ease',
             }
@@ -52,11 +54,10 @@ class AboutAnim extends React.Component {
         setTimeout(this.mountStyle, 10);
         document.addEventListener('scroll', () => {
             const pos = window.scrollY;
-            const op = this.state.opacity;
-            const percentage = (((pos - this.props.begin) / (this.props.end - this.props.begin)) * 100) + 2;
+            const percentage = (((pos - this.state.begin) / (this.state.end - this.state.begin)) * 100) + 2;
             this.setState({
                 width: percentage.toString() + '%',
-                opacity: op,
+                opacity: 1,
                 transition: 'all 2s ease'
             })
         });

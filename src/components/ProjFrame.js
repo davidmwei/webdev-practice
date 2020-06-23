@@ -80,7 +80,7 @@ class ProjFrame extends React.Component {
 
                     </div>
                     <div className='pic'>
-                        {this.props.pic}
+                        <img src={this.props.pic} />
                     </div>
                 </div>
                 <Meter begin={this.props.begin} end={this.props.end} />

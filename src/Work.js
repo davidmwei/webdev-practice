@@ -2,6 +2,9 @@ import React from 'react';
 import ProjFrame from './components/ProjFrame.js';
 import NavBar from './components/NavBar.js';
 
+import Goodly from './assets/images/goodly_logo.png';
+import AI from './assets/images/cs61bl.png';
+
 
 class Work extends React.Component {
     constructor(props) {
@@ -50,6 +53,7 @@ class Work extends React.Component {
                             line3={'Check out Public Editor!'}
                             linkable={true}
                             link='https://www.publiceditor.io'
+                            pic={AI}
                             onTransitionEnd={this.transitionEnd}
                             mounted={this.state.showFrame1} />
         } else if (this.state.showFrame2) {
@@ -59,6 +63,7 @@ class Work extends React.Component {
                             line3={"Here is CS61BL's website!"}
                             linkable={true}
                             link='https://cs61bl.org/su20/'
+                            pic={Goodly}
                             onTransitionEnd={this.transitionEnd}
                             mounted={this.state.showFrame2} />
         } else {

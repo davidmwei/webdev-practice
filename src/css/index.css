@@ -276,8 +276,14 @@ body {
     color: white;
     position: fixed;
     left: 20%;
-    width: 40%;
+    width: 60%;
     font-size: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-text {
+    vertical-align: middle;
 }
 
 .line {
@@ -287,6 +293,10 @@ body {
 .line a {
     text-decoration: none;
     color: white;
+}
+
+.pic {
+    
 }
 
 
