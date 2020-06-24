@@ -296,7 +296,7 @@ body {
 }
 
 .pic {
-    
+   
 }
 
 
@@ -331,7 +331,6 @@ body {
     display: flex;
     flex-direction: row;
     position: fixed;
-    color: #808080;
     font-size: 1.2em;
 }
 
@@ -341,6 +340,7 @@ body {
 }
 
 .left {
+    color: white;
     left: 2%;
 }
 
@@ -363,6 +363,10 @@ body {
 .right-1:hover, .right-2:hover {
     border-bottom: 1px solid white;
     transition: .4s all ease-in-out;
+}
+
+.link-nav:hover {
+    color: white !important;
 }
 
 

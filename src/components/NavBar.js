@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends React.Component {
     render() {
@@ -10,10 +10,10 @@ class NavBar extends React.Component {
                 </div>
                 <div className='right'>
                     <div className='right-1'>
-                        <Link to={this.props.right1} style={{ textDecoration: 'none', color: '#808080' }}>{this.props.right1name}</Link>
+                        <NavLink to={this.props.right1} className='link-nav' activeClassName='link-nav-active' style={{ textDecoration: 'none', color: '#808080' }}>{this.props.right1name}</NavLink>
                     </div>
                     <div className='right-2'>
-                        <Link to={this.props.right2} style={{ textDecoration: 'none', color: '#808080' }}>{this.props.right2name}</Link>
+                        <NavLink to={this.props.right2} className='link-nav' activeClassName='link-nav-active' style={{ textDecoration: 'none', color: '#808080' }}>{this.props.right2name}</NavLink>
                     </div>
                 </div>
             </div>
