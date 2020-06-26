@@ -18,23 +18,23 @@ class About extends React.Component {
         document.addEventListener('scroll', () => {
             console.log(window.scrollY);
             const pos = window.scrollY;
-            if (pos > 1000 && pos < 2000) {
+            if (pos < 1000) {
+                this.setState({
+                    showAbout: true,
+                    showInfo: false,
+                    showCalHacks: false,
+                })
+            } else if (pos >= 1000 && pos < 2000) {
                 this.setState({
                     showAbout: false,
                     showInfo: true,
                     showCalHacks: false,
                 })
-            } else if (pos > 2000) {
+            } else if (pos >= 2000) {
                 this.setState({
                     showAbout: false,
                     showInfo: false,
                     showCalHacks: true,
-                })
-            } else {
-                this.setState({
-                    showAbout: true,
-                    showInfo: false,
-                    showCalHacks: false,
                 })
             }
         })

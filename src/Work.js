@@ -20,23 +20,23 @@ class Work extends React.Component {
         document.addEventListener('scroll', () => {
             console.log(window.scrollY);
             const pos = window.scrollY;
-            if (pos > 1000 && pos < 2000) {
+            if (pos < 1000) {
+                this.setState({
+                    showFrame1: true,
+                    showFrame2: false,
+                    showFrame3: false
+                })
+            } else if (pos >= 1000 && pos < 2000) {
                 this.setState({
                     showFrame1: false,
                     showFrame2: true,
                     showFrame3: false
                 })
-            } else if (pos > 2000) {
+            } else if (pos >= 2000) {
                 this.setState({
                     showFrame1: false,
                     showFrame2: false,
                     showFrame3: true
-                })
-            } else {
-                this.setState({
-                    showFrame1: true,
-                    showFrame2: false,
-                    showFrame3: false
                 })
             }
         })

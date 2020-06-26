@@ -16,17 +16,17 @@ class Home extends React.Component {
         document.addEventListener('scroll', () => {
             console.log(window.scrollY);
             const pos = window.scrollY;
-            if (pos > 1000) {
-                this.setState({
-                    showWelcome: false,
-                    showLinks: true,
-                    display: 2
-                })
-            } else {
+            if (pos < 1000) {
                 this.setState({
                     showWelcome: true,
                     showLinks: false,
                     display: 1
+                })
+            } else if (pos >= 1000) {
+                this.setState({
+                    showWelcome: false,
+                    showLinks: true,
+                    display: 2
                 })
             }
         });
